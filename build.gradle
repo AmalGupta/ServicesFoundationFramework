@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.6.4'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "org.sonarqube" version "3.5.0.2730"
 }
 
 group = 'com.sff'
@@ -19,6 +20,12 @@ jar {
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
+	}
+}
+
+sonar {
+	properties {
+		property "sonar.projectKey", "SFF"
 	}
 }
 
