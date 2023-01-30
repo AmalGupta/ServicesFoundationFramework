@@ -1,0 +1,4 @@
+rootProject.name = 'services-foundation-framework'
+
+include 'sff-platform'
+include 'spring-boot-generic-executor'
