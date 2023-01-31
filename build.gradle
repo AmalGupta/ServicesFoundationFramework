@@ -26,6 +26,8 @@ configurations {
 sonar {
 	properties {
 		property "sonar.projectKey", "SFF"
+		property "sonar.login", "admin"
+		property "sonar.password", "idYod01"
 	}
 }
 
