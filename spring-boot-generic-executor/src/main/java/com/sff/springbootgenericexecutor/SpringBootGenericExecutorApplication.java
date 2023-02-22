@@ -3,8 +3,10 @@ package com.sff.springbootgenericexecutor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"com.sff.controllers"})
 @Slf4j
 public class SpringBootGenericExecutorApplication {
 
@@ -12,7 +14,6 @@ public class SpringBootGenericExecutorApplication {
 
 		log.info("Starting Spring Boot Generic Executor");
 		SpringApplication.run(SpringBootGenericExecutorApplication.class, args);
-
 	}
 
 }
