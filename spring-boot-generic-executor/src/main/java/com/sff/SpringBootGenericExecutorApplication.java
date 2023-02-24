@@ -1,4 +1,4 @@
-package com.sff.springbootgenericexecutor;
+package com.sff;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
