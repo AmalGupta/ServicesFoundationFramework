@@ -13,8 +13,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(controllers= SffRestController.class )
-public class SffRestControllerTest {
+@WebMvcTest(controllers = SffDiagnosticsController.class )
+public class SffDiagnosticsControllerTest {
 
     @Autowired
     private MockMvc mvc;
@@ -23,7 +23,7 @@ public class SffRestControllerTest {
     @DisplayName("Test Status of SFF Rest Controller")
     public void testGetStatus() throws Exception {
             mvc.perform(MockMvcRequestBuilders
-                .get("/status")
+                .get("/diagnostics/status")
                 .accept(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isOk())
