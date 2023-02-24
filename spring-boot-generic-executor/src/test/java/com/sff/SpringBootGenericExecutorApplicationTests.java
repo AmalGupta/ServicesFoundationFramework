@@ -1,4 +1,4 @@
-package com.sff.springbootgenericexecutor;
+package com.sff;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
